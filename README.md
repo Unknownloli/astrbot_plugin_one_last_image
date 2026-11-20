@@ -1,3 +1,5 @@
+![小明日香真可爱啊啊啊啊啊啊](assets/simple.jpg)
+
 # One Last Image · 卢浮宫生成器
 
 > 把**赛璐珞风格的动画截图 / 插画**，转换成《One Last Kiss》封面风格的彩色线稿。

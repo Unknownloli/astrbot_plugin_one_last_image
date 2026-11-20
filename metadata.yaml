@@ -5,6 +5,14 @@ short_desc: 动画截图 → One Last Kiss 封面风格线稿
 version: v1.0.0
 author: Unknownloli
 repo: https://github.com/Unknownloli/astrbot_plugin_one_last_image
+social_link: https://github.com/Unknownloli
+category: 娱乐
+tags:
+  - 图片生成
+  - 图片处理
+  - 线稿
+  - 卢浮宫
+  - One Last Kiss
 astrbot_version: ">=4.13.0"
 support_platforms:
   - aiocqhttp
