@@ -1,0 +1,119 @@
+{
+  "watermark": {
+    "description": "叠加右下角光碟水印",
+    "type": "bool",
+    "default": true,
+    "hint": "One Last Kiss 封面右下角的圆盘标志；关闭后是纯线稿"
+  },
+  "hajimei": {
+    "description": "默认使用初回限定盘水印",
+    "type": "bool",
+    "default": false,
+    "hint": "和原版网站的「初回限定盘面效果」一致，只影响水印样式"
+  },
+  "convolute": {
+    "description": "线条方案",
+    "type": "string",
+    "options": ["精细", "一般", "稍粗", "超粗", "极粗", "浮雕", "线稿"],
+    "default": "一般",
+    "hint": "卷积核越大线条越粗；「线稿」不做卷积，直接输出灰度"
+  },
+  "shade": {
+    "description": "暗部排铅笔调子",
+    "type": "bool",
+    "default": true
+  },
+  "shade_light": {
+    "description": "调子深度",
+    "type": "int",
+    "default": 80,
+    "slider": { "min": 0, "max": 200, "step": 5 }
+  },
+  "shade_limit": {
+    "description": "排线亮度阈值",
+    "type": "int",
+    "default": 108,
+    "slider": { "min": 0, "max": 255, "step": 1 },
+    "hint": "亮度低于该值的区域才会排调子"
+  },
+  "denoise": {
+    "description": "先做 3x3 降噪",
+    "type": "bool",
+    "default": true
+  },
+  "light": {
+    "description": "整体亮度调整",
+    "type": "int",
+    "default": 0,
+    "slider": { "min": -80, "max": 80, "step": 5 }
+  },
+  "light_cut": {
+    "description": "亮部裁切",
+    "type": "int",
+    "default": 128,
+    "slider": { "min": 0, "max": 200, "step": 1 },
+    "hint": "调大更白、线条更少；和暗部裁切一起决定对比度"
+  },
+  "dark_cut": {
+    "description": "暗部裁切",
+    "type": "int",
+    "default": 118,
+    "slider": { "min": 0, "max": 200, "step": 1 }
+  },
+  "kuma": {
+    "description": "彩虹渐变上色",
+    "type": "bool",
+    "default": true,
+    "hint": "关闭后输出纯黑白线稿"
+  },
+  "max_width": {
+    "description": "输入图最大宽度",
+    "type": "int",
+    "default": 1600,
+    "slider": { "min": 400, "max": 1920, "step": 100 },
+    "hint": "超过就先缩小再渲染，越小越快"
+  },
+  "jpeg_quality": {
+    "description": "输出 JPEG 质量",
+    "type": "int",
+    "default": 92,
+    "slider": { "min": 50, "max": 98, "step": 1 }
+  },
+  "max_input_mb": {
+    "description": "输入图片大小上限（MB）",
+    "type": "int",
+    "default": 20,
+    "slider": { "min": 1, "max": 50, "step": 1 }
+  },
+  "max_input_pixels": {
+    "description": "输入图片像素上限",
+    "type": "int",
+    "default": 24000000,
+    "hint": "超过就先等比缩小，防止超大图吃满内存"
+  },
+  "cooldown_seconds": {
+    "description": "每人冷却时间（秒）",
+    "type": "int",
+    "default": 0,
+    "slider": { "min": 0, "max": 60, "step": 1 },
+    "hint": "0 表示不限制"
+  },
+  "max_concurrent": {
+    "description": "同时渲染的任务数",
+    "type": "int",
+    "default": 2,
+    "slider": { "min": 1, "max": 8, "step": 1 }
+  },
+  "cache_ttl_minutes": {
+    "description": "生成结果保留时间（分钟）",
+    "type": "int",
+    "default": 60,
+    "slider": { "min": 0, "max": 1440, "step": 10 }
+  },
+  "enable_llm_tool": {
+    "description": "允许大模型主动调用",
+    "type": "bool",
+    "default": true,
+    "hint": "开启后可以说「把这张图变成卢浮宫风格」由模型自行调用"
+  }
+}
