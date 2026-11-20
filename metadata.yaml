@@ -2,7 +2,7 @@ name: astrbot_plugin_one_last_image
 display_name: One Last Image 卢浮宫生成器
 desc: 把赛璐珞风格的动画截图或插画，转换成 One Last Kiss 封面风格的彩色线稿。引用图片发 /卢浮宫 即可，支持线条粗细、铅笔排线、水印与初回限定盘等选项。
 short_desc: 动画截图 → One Last Kiss 封面风格线稿
-version: v1.0.0
+version: v1.0.1
 author: Unknownloli
 repo: https://github.com/Unknownloli/astrbot_plugin_one_last_image
 social_link: https://github.com/Unknownloli

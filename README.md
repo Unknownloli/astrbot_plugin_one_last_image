@@ -26,7 +26,7 @@ AstrBot 插件版 · 作者 [@Unknownloli](https://github.com/Unknownloli)
 **方式一：上传压缩包（推荐）**
 
 1. 到 [Releases](https://github.com/Unknownloli/astrbot_plugin_one_last_image/releases)
-   下载 `astrbot_plugin_one_last_image-v1.0.0.zip`
+   下载 `astrbot_plugin_one_last_image-v1.0.1.zip`
 2. AstrBot WebUI →「插件」→ 从文件安装 → 选中这个 zip
 3. 重载 / 启用插件
 
